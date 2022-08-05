@@ -1,3 +1,7 @@
+:root{
+    --card-width:500px;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -9,8 +13,8 @@ body{
 }
 .white-container{
     background: white; 
-    height: 50vh;
-    width: 50vw;
+    width:calc(var(--card-width) * 1);
+    height: calc(var(--card-width) * 0.5);
     padding:5px;    
 }
 
@@ -56,16 +60,16 @@ body{
 
 
 .vertical-container .item:nth-child(2){
-   font-size: 1.5em; 
-   width: 600;
+   font-size: 3em; 
+   
 }
 
 .vertical-container::before{
     content:"";
     background-color: white;
     opacity: 50%;
-    height: 10em;
-    width: 10em;
+    height: calc(var(--card-width) * 0.45);
+    width: calc(var(--card-width) * 0.45);
     top:40%;
     left:60%;    
     border-radius: 50%;
@@ -76,8 +80,8 @@ body{
     content:"";
     background-color: white;
     opacity: 50%;
-    height: 10em;
-    width: 10em;
+    height: calc(var(--card-width) * 0.45);
+    width: calc(var(--card-width) * 0.45);
     border-radius: 50%;
     top:-30%;
     left:70%;
